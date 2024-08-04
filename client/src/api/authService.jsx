@@ -1,8 +1,7 @@
 // authService.js
 
 import axios from 'axios';
-
-const API_URL = 'http://localhost:3000'; // Replace with your backend API URL
+const API_URL = import.meta.env.VITE_API_URL;
 
 const authService = {
   signup: async ({ email, password, name }) => {
@@ -12,6 +11,8 @@ const authService = {
     } catch (error) {
       throw error.response.data.message;
     }
+    console.log(API_URL);
+   
   },
 
   login: async ({ email, password }) => {

@@ -4,6 +4,7 @@ import { Navbar,Footer } from './components'
 import { useSelector } from 'react-redux'
 
 
+
 function Layout() {
   const authStatus = useSelector((state)=>state.auth.status)
   return (
@@ -11,6 +12,7 @@ function Layout() {
     {authStatus?(<Outlet/>):(<><Navbar/>
     <Outlet/>
     <Footer/></>)}
+
     </>
 
   )
