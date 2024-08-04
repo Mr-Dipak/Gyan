@@ -4,7 +4,7 @@ const API_URL = import.meta.env.VITE_API_URL;
 const postService = {
   getAllPosts: async () => {
     try {
-      const response = await axios.get(`${API_URL}/api/posts`);
+      const response = await axios.get(`${API_URL}api/posts`);
       return response.data;
     } catch (error) {
       throw error.response.data.message;
@@ -13,7 +13,7 @@ const postService = {
 
   createPost: async (formData) => {
     try {
-      const response = await axios.post(`${API_URL}/api/posts`, formData, {
+      const response = await axios.post(`${API_URL}api/posts`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data', // Ensure correct content type for FormData
         },
