@@ -1,0 +1,23 @@
+[2024-06-01T22:35:32.221Z] [PAYTM] INFO [NODE-SDK:1.0.0:b4a17ea3-35a0-4151-8d91-5c3fae29e259] <Payment>: MerchantProperties are not initialized 
+[2024-06-01T22:35:32.224Z] [PAYTM] CRITICAL [NODE-SDK:1.0.0:b4a17ea3-35a0-4151-8d91-5c3fae29e259] <SDKException>: Missing merchant property
+[2024-06-01T22:35:32.225Z] [PAYTM] CRITICAL [NODE-SDK:1.0.0:b4a17ea3-35a0-4151-8d91-5c3fae29e259] <SDKException>: SDKException's msg Missing merchant property
+[2024-06-01T22:35:32.225Z] [PAYTM] CRITICAL [NODE-SDK:1.0.0:b4a17ea3-35a0-4151-8d91-5c3fae29e259] <CommonUtil>: getSDKResponse with exception : {"message":"Missing merchant property"}
+[2024-06-01T22:35:32.226Z] [PAYTM] CRITICAL [NODE-SDK:1.0.0:b4a17ea3-35a0-4151-8d91-5c3fae29e259] <CommonUtil>: Exception instanceof SDKException with rawData : undefined
+[2024-06-01T22:39:29.148Z] [PAYTM] INFO [NODE-SDK:1.0.0:658cfe93-681f-432a-b57e-d2314dd7ae1d] <Payment>: MerchantProperties are not initialized 
+[2024-06-01T22:39:29.149Z] [PAYTM] CRITICAL [NODE-SDK:1.0.0:658cfe93-681f-432a-b57e-d2314dd7ae1d] <SDKException>: Missing merchant property
+[2024-06-01T22:39:29.149Z] [PAYTM] CRITICAL [NODE-SDK:1.0.0:658cfe93-681f-432a-b57e-d2314dd7ae1d] <SDKException>: SDKException's msg Missing merchant property
+[2024-06-01T22:39:29.150Z] [PAYTM] CRITICAL [NODE-SDK:1.0.0:658cfe93-681f-432a-b57e-d2314dd7ae1d] <CommonUtil>: getSDKResponse with exception : {"message":"Missing merchant property"}
+[2024-06-01T22:39:29.151Z] [PAYTM] CRITICAL [NODE-SDK:1.0.0:658cfe93-681f-432a-b57e-d2314dd7ae1d] <CommonUtil>: Exception instanceof SDKException with rawData : undefined
+[2024-06-01T22:47:19.081Z] [PAYTM] INFO [NODE-SDK1.0.0] <MerchantProperties>: initialize called
+[2024-06-01T22:47:19.083Z] [PAYTM] INFO [NODE-SDK1.0.0] <MerchantProperties>: Setting Environment for STAGE
+[2024-06-01T22:47:19.083Z] [PAYTM] CRITICAL [NODE-SDK1.0.0] <SDKException>: SDKException's msg Txn amount should be of type paytm_pg_modelsMoney
+[2024-06-01T22:49:42.601Z] [PAYTM] INFO [NODE-SDK1.0.0] <MerchantProperties>: initialize called
+[2024-06-01T22:49:42.603Z] [PAYTM] INFO [NODE-SDK1.0.0] <MerchantProperties>: Setting Environment for STAGE
+[2024-06-01T22:49:42.604Z] [PAYTM] INFO [NODE-SDK:1.0.0:2e9aa4f5-50a7-42e9-ab46-b0249d0bbf67] <Payment>: In createTxnToken PaymentDetail: {"channelId":"WEB","orderId":"1234567890","txnAmount":{},"userInfo":{"address":"123 Main St","email":"example@example.com","firstName":"John","lastName":"Doe","mobile":"1234567890","pincode":"123456"},"readTimeout":80000}
+[2024-06-01T22:49:42.604Z] [PAYTM] INFO [NODE-SDK:1.0.0:2e9aa4f5-50a7-42e9-ab46-b0249d0bbf67] <Payment>: validatePaymentDetailsObject for object: {"channelId":"WEB","orderId":"1234567890","txnAmount":{},"userInfo":{"address":"123 Main St","email":"example@example.com","firstName":"John","lastName":"Doe","mobile":"1234567890","pincode":"123456"},"readTimeout":80000}
+[2024-06-01T22:49:42.604Z] [PAYTM] INFO [NODE-SDK:1.0.0:2e9aa4f5-50a7-42e9-ab46-b0249d0bbf67] <Payment>:  validatePaymentDetailsObject returns false 
+[2024-06-01T22:49:42.605Z] [PAYTM] CRITICAL [NODE-SDK:1.0.0:2e9aa4f5-50a7-42e9-ab46-b0249d0bbf67] <SDKException>: Missing Mandatory Parameters
+[2024-06-01T22:49:42.605Z] [PAYTM] CRITICAL [NODE-SDK:1.0.0:2e9aa4f5-50a7-42e9-ab46-b0249d0bbf67] <SDKException>: SDKException's msg Missing Mandatory Parameters
+[2024-06-01T22:49:42.605Z] [PAYTM] INFO [NODE-SDK:1.0.0:2e9aa4f5-50a7-42e9-ab46-b0249d0bbf67] <Payment>: Exception caught in createTxnToken: {"message":"Missing Mandatory Parameters"}
+[2024-06-01T22:49:42.605Z] [PAYTM] CRITICAL [NODE-SDK:1.0.0:2e9aa4f5-50a7-42e9-ab46-b0249d0bbf67] <CommonUtil>: getSDKResponse with exception : {"message":"Missing Mandatory Parameters"}
+[2024-06-01T22:49:42.606Z] [PAYTM] CRITICAL [NODE-SDK:1.0.0:2e9aa4f5-50a7-42e9-ab46-b0249d0bbf67] <CommonUtil>: Exception instanceof SDKException with rawData : undefined
