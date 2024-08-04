@@ -2,10 +2,13 @@
 
 import cors from 'cors';
 
-// Set up CORS middleware
+// Define CORS options
 const corsOptions = {
-  origin: true, 
-  credentials: true 
+  origin: ['https://gyanprabhafoundation.vercel.app'], // Replace with your allowed origins
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow specific HTTP methods
+  allowedHeaders: ['Content-Type', 'Authorization'], // Allow specific headers
 };
 
+// Set up CORS middleware
 export default cors(corsOptions);
