@@ -5,7 +5,7 @@ import corsMiddleware from './middleware/cors.js';
 import { router as authRoutes } from './routes/authRoutes.js';
 import { postRouter } from './routes/postRoutes.js';
 import { newsLetterRouter } from './routes/newsLetter.js';
-import { initiateTransaction } from './paytmIntegration.js'; // Import the initiateTransaction function
+
 
 const app = express();
 
@@ -18,17 +18,7 @@ app.use('/api/auth', authRoutes); // Authentication routes
 app.use('/api/posts', postRouter); // Post routes
 app.use('/api/subscribe', newsLetterRouter); // NewsLetter routes
 
-// Endpoint for initiating Paytm transaction
-app.post('/api/paytm/initiate-transaction', async (req, res) => {
-  const { orderId, amount, callbackUrl } = req.body;
 
-  try {
-    const response = await initiateTransaction(orderId, amount, callbackUrl);
-    res.json(response);
-  } catch (error) {
-    res.status(500).json({ error: error.message });
-  }
-});
 
 // Database synchronization
 sequelize.sync().then(() => {
