@@ -2,9 +2,10 @@
 
 import cors from 'cors';
 
-// Set up CORS middleware
+
 const corsOptions = {
-  origin: 'http://localhost:5173' // Update this with your frontend origin
+  origin: true,
+  credentials: true
 };
 
 export default cors(corsOptions);
