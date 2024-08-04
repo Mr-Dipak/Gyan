@@ -1,11 +1,9 @@
-// server.js
-
 import express from 'express';
 import bodyParser from 'body-parser';
 import sequelize from './config/database.js';
 import corsMiddleware from './middleware/cors.js';
 import { router as authRoutes } from './routes/authRoutes.js';
-import { postRouter } from './routes/postRoutes.js'; 
+import { postRouter } from './routes/postRoutes.js';
 import { newsLetterRouter } from './routes/newsLetter.js';
 import { initiateTransaction } from './paytmIntegration.js'; // Import the initiateTransaction function
 
@@ -39,7 +37,10 @@ sequelize.sync().then(() => {
   console.error('Unable to sync database:', err);
 });
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
+// Export the app for serverless deployment
+export default app;
