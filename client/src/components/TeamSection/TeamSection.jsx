@@ -31,7 +31,7 @@ export default function TeamSection() {
           </p>
         </div>
         <ul role="list" className="mt-12 grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          {people.map((person) => (
+          {/* {people.map((person) => (
             <li key={person.name} className="flex flex-col items-center text-center">
               <img className="h-32 w-32 rounded-full object-cover" src={person.imageUrl} alt={person.name} />
               <div className="mt-4">
@@ -39,14 +39,14 @@ export default function TeamSection() {
                 <p className="text-sm font-medium text-indigo-600">{person.role}</p>
               </div>
             </li>
-          ))}
+          ))} */}
           {/* Adding GitHub data if available */}
           {gitData && (
             <li key={gitData.name} className="flex flex-col items-center text-center">
               <img className="h-32 w-32 rounded-full object-cover" src={gitData.avatar_url} alt={gitData.name} />
               <div className="mt-4">
                 <h3 className="text-lg font-semibold text-gray-900">{gitData.name}</h3>
-                <p className="text-sm font-medium text-indigo-600">GitHub User</p>
+                <p className="text-sm font-medium text-indigo-600">'Founder / CEO'</p>
               </div>
             </li>
           )}
