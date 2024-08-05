@@ -44,7 +44,7 @@ export function About() {
       </div>
 
 
-      <AboutSection/>
+     
       <AboutCard />
       <TeamSection />
       <BlogSection />
